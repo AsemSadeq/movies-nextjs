@@ -1,0 +1,10 @@
+.rateSection {
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+}
+
+.goldStar {
+    color: var(--palette-warning-main);
+}

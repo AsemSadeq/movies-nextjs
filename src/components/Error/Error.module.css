@@ -1,0 +1,23 @@
+.errorWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.errorWrapper > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.errorTitle {
+    font-size: 2rem;
+    color: var(--palette-text-primary);
+}
+
+@media only screen and (min-width: 62rem) {
+    .errorWrapper > img {
+        width: 65%;
+        margin: 0 auto;
+    }
+}

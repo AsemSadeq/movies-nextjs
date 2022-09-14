@@ -1,0 +1,22 @@
+.linksWrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.linksWrapper a, .linksWrapper button {
+    cursor: pointer;
+    border: 1px solid rgba(var(--palette-primary-main-rgb), 0.5);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--palette-primary-main);
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    padding: 0.7rem 1rem;
+    background-color: transparent;
+}
+
+.linksWrapper a:hover, .linksWrapper button:hover {
+    background-color: rgba(var(--palette-primary-main-rgb), 0.1);
+}

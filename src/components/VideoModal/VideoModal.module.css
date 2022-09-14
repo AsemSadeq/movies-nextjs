@@ -1,0 +1,27 @@
+.modalWrapper {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.modalContent {
+    width: 90%;
+    height: 80%;
+    z-index: 1001;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (min-width: 62rem) {
+    .modalContent {
+        width: 70%;
+        height: 60%;
+    }
+}

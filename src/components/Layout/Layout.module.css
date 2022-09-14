@@ -1,0 +1,15 @@
+.themeWrapper {
+    background-color: var(--background-default);
+    min-height: 100vh;
+}
+
+.pageWrapper {
+    background-color: var(--background-default);
+    padding: 1rem 0 2rem;
+}
+
+@media only screen and (min-width: 62rem) {
+    .pageWrapper {
+        margin-left: 15.625rem;
+    }
+}

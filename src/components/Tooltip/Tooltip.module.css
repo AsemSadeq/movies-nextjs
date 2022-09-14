@@ -1,0 +1,33 @@
+.tooltipWrapper {
+    position: relative;
+}
+
+.tooltipContent {
+    position: absolute;
+    background-color: var(--palette-primary-light);
+    color:  rgba(0,0,0,0.87);
+    font-size: 0.6875rem;
+    border-radius: 0.3rem;
+    padding: 0.5625rem;
+    left: 50%;
+    width: 7.5rem;
+    transform: translate(-50%);
+    text-align: center;
+    bottom: 100%;
+    display: none;
+}
+
+.tooltipContent::after {
+    content: "";
+    position: absolute;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--palette-primary-light) transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltipWrapper:hover .tooltipContent {
+    display: block;
+}

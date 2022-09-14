@@ -1,26 +1,37 @@
-html,
-body {
-  padding: 0;
+*, ::before,::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+:root {
+  --background-default: #fafafa;
+  --palette-secondary-main: #b80040;
+  --palette-background-paper:#fff;
+  --palette-text-primary: rgba(0,0,0,0.87);
+  --palette-primary-main: #14b8a2;
+  --palette-divider:rgba(0,0,0,0.12);
+  --background-blend-gradient: linear-gradient(rgba(255,255,255,0) 68%,rgb(255,255,255) 100%);
+  --palette-text-secondary:  rgba(0,0,0,0.54);
+  --palette-warning-main: #b5b800;
+  --palette-primary-light: #43c6b4;
+  --palette-primary-main-rgb: 20, 184, 162;
+}
+
+[data-theme='dark'] {
+  --background-default: #303030;
+  --palette-secondary-main: #ff206e;
+  --palette-background-paper: #424242;
+  --palette-text-primary: #fff;
+  --palette-divider:rgba(255,255,255,0.12);
+  --background-blend-gradient: linear-gradient(rgba(255,255,255,0) 68%,rgb(48,48,48) 100%);
+  --palette-text-secondary: rgba(255,255,255,0.7);
+  --palette-warning-main: #fbff12;
+  --palette-primary-light: #67eedc;
+  --palette-primary-main-rgb: 65, 234, 212
+}
+
+input:focus {
+  outline: 0;
 }

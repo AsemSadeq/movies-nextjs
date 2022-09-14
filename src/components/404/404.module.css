@@ -1,0 +1,30 @@
+.errorWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.errorTitle {
+    color: var(--palette-text-primary);
+    font-size: 1rem;
+}
+
+.subTitle {
+    composes: errorTitle;
+    font-size: 1rem;
+}
+
+.errorImg > img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 62rem) {
+    .errorTitle {
+      font-size: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1.5rem
+    }
+}
