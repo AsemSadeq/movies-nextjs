@@ -23,6 +23,7 @@
 .infoSection, .ratingSection {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -43,6 +44,7 @@
 
 .genresWrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.25rem;
     color: var(--palette-secondary-main);
 }
